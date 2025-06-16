@@ -1,0 +1,9 @@
+Progress as of Friday, June 16, 2025
+
+-layouting trying some design
+-making the registration
+ >>Login modal appears first on site load
+ >>You can choose to either to login/register or just explore the website
+ >>Close login modal to reveal main content
+-making it responsive
+-clean separation of file code
