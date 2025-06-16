@@ -1,0 +1,27 @@
+List key fields:
+
+-Tag_ID (unique identifier from RFID)
+
+-Goat_Name
+
+-Breed
+
+-Sex
+
+-Date_of_Birth / Age
+
+-Weight
+
+-Location
+
+-Scan_Date
+
+-Temperature 
+
+-Medical_History 
+
+-Vaccination_Records 
+
+-Reproductive_Status (for females: lactating, pregnant, etc.)
+
+-Notes 
