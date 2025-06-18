@@ -1,0 +1,10 @@
+Progress as of June 17-18, 2025
+
+>>review and update
+>>changing some part in the login/register
+>>fixing error and problems
+>>changing some design 
+>>making sure the login/register working properly
+>>still trying to make it responsive and again review and update
+>>finding some layout and exploring in internet for the data presentation
+>>starting in the main content
