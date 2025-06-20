@@ -1,0 +1,4 @@
+Progress as of June 19-20, 2025
+>>review and update
+>>register/login page broken need to be fix
+>>continuing in the data presentation(slow progress)
