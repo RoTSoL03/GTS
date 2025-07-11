@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goatFormScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+        <!-- RFID Tag -->
+        <EditText
+            android:id="@+id/editTagId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RFID Tag"
+            android:enabled="false" />
+
+        <!-- Goat Name -->
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goat Name" />
+
+        <!-- Date of Birth -->
+        <EditText
+            android:id="@+id/editDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth (YYYY-MM-DD)" />
+
+        <!-- Age -->
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age (Auto or manual)" />
+
+        <!-- Breed -->
+        <EditText
+            android:id="@+id/editBreed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Breed" />
+
+        <!-- Gender -->
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+
+        <!-- Height -->
+        <EditText
+            android:id="@+id/editHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height (cm)"
+            android:inputType="numberDecimal" />
+
+        <!-- Lineage -->
+        <EditText
+            android:id="@+id/editLineage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lineage (e.g., Parents, Siblings)" />
+
+        <!-- Vaccine Spinner -->
+        <Spinner
+            android:id="@+id/spinnerVaccine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Health Notes -->
+        <EditText
+            android:id="@+id/editHealthNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Health Notes"
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <!-- Milk Yield -->
+        <EditText
+            android:id="@+id/editMilkYield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Milk Yield (L)"
+            android:inputType="numberDecimal" />
+
+
+        <!-- Update & Delete Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
