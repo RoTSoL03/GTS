@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register New Goat"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Tag ID -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag ID:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTagId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RFID Tag ID"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goat name"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Date of Birth -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Breed -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breed:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editBreed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Breed"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginEnd="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+        </RadioGroup>
+
+        <!-- Height -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Height (cm):"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height in cm"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Weight -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight (kg):"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight in kg"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Milk Yield (Female only) -->
+        <TextView
+            android:id="@+id/labelMilkYield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Milk Yield (L/day):"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editMilkYield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Daily milk yield in liters"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+        <!-- Female-only container -->
+        <LinearLayout
+            android:id="@+id/femaleOnlyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/checkboxLactating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Currently Lactating" />
+
+            <CheckBox
+                android:id="@+id/checkboxPregnant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Currently Pregnant" />
+
+        </LinearLayout>
+
+        <!-- Lineage -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lineage:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editLineage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parent information"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Vaccine -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Given:"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerVaccine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Health Notes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Notes:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editHealthNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Health observations"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save Goat"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/viewGoatsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View Goats"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
