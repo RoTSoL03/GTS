@@ -1,0 +1,5 @@
+UPDATE AS OF JULY 18, 2025
+
+>>DONE MAKING THE GOAT DATA ALSO THE BACKEND OF IT. BUT THERE ARE SOME PARTS NEED TO BE UPDATED MAKING SURE EVERYTHING IN BACKEND WORK AND MAKE IT MORE SMOOTHER.
+>>The main (or home) content is mostly complete, but still plan to refine it making it cleaner, more presentable, and visually polished.
+>>AS OF NOW IM MAKING THE FARMERS DETAILS.
